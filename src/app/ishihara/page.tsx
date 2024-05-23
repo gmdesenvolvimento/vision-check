@@ -8,7 +8,7 @@ export default function VisionTests() {
   const [currentImage, setCurrentImage] = useState('/ishi.jpg');
   const [currentCount, setCurrentCount] = useState(1);
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: any) => {
     if (event.key === 'ArrowRight') {
       setCurrentImage('/ishi-5.jpg');
       setCurrentCount(2);
